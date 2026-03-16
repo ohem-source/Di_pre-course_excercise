@@ -1,0 +1,23 @@
+sentence = input("Enter a sentence: ")
+
+if_all_alpha = sentence.isalpha()
+
+non_alpha_count = 0
+
+for char in sentence:
+    if not char.isalpha():
+        non_alpha_count += 1
+        
+ends_with_exc = sentence.endswith("!")
+
+        
+print("Is the whole string is alphabetical?", if_all_alpha)
+print("The number of non-alphabetical characters with spaces: ", non_alpha_count)
+print("Does it end with an exclamation mark? ", ends_with_exc)
+if sentence.isspace():
+    print("There's only white spaces")
+    
+elif any(char.isspace() for char in sentence):
+            print("The sentence contains white spaces")
+else:
+    print("The sentence don't contain any whitespaces")
