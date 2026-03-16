@@ -1,0 +1,23 @@
+fruits = ["apple", "banana", "cherry", "date", "elderberry"]
+
+print(fruits[0])
+print(fruits[2])
+print(fruits[1])
+fruits[1] = "blueberry"
+print(fruits[1])
+
+
+
+fruits.append("fig")
+fruits.insert(0, "grape")
+fruits.remove("cherry")
+fruits.pop()
+
+
+berries = ["raspberry", "blueberry", "strawberry"]
+
+combined_list = fruits + berries
+
+print("The combined list is: ", combined_list)
+
+
