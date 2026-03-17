@@ -17,7 +17,6 @@ fruits.pop()
 berries = ["raspberry", "blueberry", "strawberry"]
 
 combined_list = fruits + berries
+combined_list.sort()
 
-print("The combined list is: ", combined_list)
-
-
+print("The combined list is: ", combined_list[-3:])
